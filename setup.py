@@ -21,7 +21,7 @@ ENTRY_POINTS = {
         # Syntax: category name = path.to.package.containing.widgets
         # Widget category specification can be seen in
         #    orangecontrib/example/widgets/__init__.py
-        'Geo = orangecontrib.geo.widgets',
+        '地理(Geo) = orangecontrib.geo.widgets',
     ),
     # Register widget help
     "orange.canvas.help": (
@@ -54,7 +54,7 @@ if __name__ == '__main__':
     assert_release_contains_geojson()
 
     setup(
-        name='Orange3-Geo',
+        name='Orange3-Geo-zh',
         version=VERSION,
         description="Orange add-on for dealing with geography and geo-location.",
         long_description=LONG_DESCRIPTION,
@@ -66,7 +66,7 @@ if __name__ == '__main__':
         },
         include_package_data=True,
         install_requires=[
-            'Orange3>=3.20.0',
+            'Orange3-zh>=3.20.0',
             'scikit-learn',
             'pandas',
             'scipy>=0.17',
